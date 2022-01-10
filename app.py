@@ -27,5 +27,5 @@ def render_departure(departure):
 @app.route('/tours/<int:id>/')
 def render_tour(id):
     return render_template('tour.html', main_title=title, tour=tours, id=id, dps=departures)
-
+print ("Salam!")
 app.run() # запустим сервер
